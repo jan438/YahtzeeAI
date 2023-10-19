@@ -42,10 +42,6 @@
 	<span id="turn">1</span>
 </div>
 <div>
-	<span>Choosen AI categories: </span>
-	<span id="choosen_categories"></span>
-</div>
-<div>
 	<table class="table table-bordered">
 	<tr>
 		<td class="choice"></td><td class="chkbx"><label class="checkbox1"><input type="checkbox" id="chk10" onclick="return false" /></label></td><td class="chkbx"><label class="checkbox2"><input type="checkbox" id="chk20" onclick="return false"></label></td><td class="score">Human</td><td class="chkbx"><label class="checkbox1"><input type="checkbox" id="chkAI0" onclick="return false"></label></td><td class="score">AI</td>
@@ -191,7 +187,6 @@ $(document).ready(function () {
 	$("#dicebutton").prop("disabled", false);
 	$("#dicescore").css("color", "red");
 	$("#dicescore").prop("disabled", true);
-	$("#choosen_categories").html("false,false,false,false,false,false,false,false,false,false,false,false,false");
 	$("[id^=chk1]").prop("disabled", true);
 	$("[id^=chk2]").prop("disabled", true);
 	$("[id^=chkAI]").prop("disabled", true);

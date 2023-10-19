@@ -538,7 +538,20 @@ D7AnimGroup.prototype.start = function(results) {
 	if (this.id === "dice1") {
 //		console.log("D7 AnimGroup: " + this.id);
 //		console.log("Roll: " + this.roll);
-		this.categoryHasBeenChosen = $("#choosen_categories").html().split(",");
+		this.categoryHasBeenChosen = [false,false,false,false,false,false,false,false,false,false,false,false,false];
+		this.categoryHasBeenChosen[0] = $("#chkAIone").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[1] = $("#chkAItwo").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[2] = $("#chkAIthree").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[3] = $("#chkAIfour").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[4] = $("#chkAIfive").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[5] = $("#chkAIsix").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[6] = $("#chkAIthreeofakind").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[7] = $("#chkAIcarre").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[8] = $("#chkAIfull").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[9] = $("#chkAIsmallstr").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[10] = $("#chkAIlargestr").parent().parent().hasClass("highlight").toString();		
+		this.categoryHasBeenChosen[11] = $("#chkAIyahtzee").parent().parent().hasClass("highlight").toString();
+		this.categoryHasBeenChosen[12] = $("#chkAIchance").parent().parent().hasClass("highlight").toString();		
 		var bestSelectionroll = this.getBestSelection();
 		var bestEValueroll = this.bestEValue;
 		var values = this.allSelections.toArray();

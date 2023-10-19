@@ -929,7 +929,6 @@ YAHTZEE.aiscoreResults = function() {
 		AIchecked++;
 		$("#chkAIchance").parent().parent().addClass("highlight");
 	}
-	$("#choosen_categories").html($("#chkAIone").parent().parent().hasClass("highlight").toString() + "," + $("#chkAItwo").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIthree").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIfour").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIfive").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIsix").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIthreeofakind").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIcarre").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIfull").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIsmallstr").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIlargestr").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIyahtzee").parent().parent().hasClass("highlight").toString() + "," + $("#chkAIchance").parent().parent().hasClass("highlight").toString());
 	$("#scoreAI1upperscore").html(YahtzeeAI.scoreuppergrid);
 	if (YahtzeeAI.scoreuppergrid > 62) YahtzeeAI.bonusuppergrid = 35;
 	$("#scoreAIupperbonus").html(YahtzeeAI.bonusuppergrid);
