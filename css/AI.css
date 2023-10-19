@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "Alice Regular";
+    src: url(../../fonts/Alice-Regular.ttf) format("truetype");
+}
+.die.selected {
+	background-image: url('../dieselected.gif');
+}
+#die0.selected {
+	background-image: url('../dieselected.gif');
+}
+#die1.selected {
+	background-image: url('../dieselected.gif');
+}
+#die2.selected {
+	background-image: url('../dieselected.gif');
+}
+#die3.selected {
+	background-image: url('../dieselected.gif');
+}
+#die4.selected {
+	background-image: url('../dieselected.gif');
+}
+#die5.selected {
+	background-image: url('../dieselected.gif');
+}
+#die6.selected {
+	background-image: url('../dieselected.gif');
+}
+#die7.selected {
+	background-image: url('../dieselected.gif');
+}
+#die8.selected {
+	background-image: url('../dieselected.gif');
+}
+#die9.selected {
+	background-image: url('../dieselected.gif');
+}
+table, th, td {
+	border: 1px solid black;
+
+}
+table td.score {
+	width: 100px;
+}
+table td.total {
+	width: 100px;
+}
+table td.choice {
+	width: 200px;
+}
+table td.gridtotal {
+	width: 200px;
+}
+table td.endtotal {
+	width: 200px;
+}
+table td.chkbx {
+	width: 20px;
+}
+.score {
+	font-family: "Alice Regular", cursive;
+	color: blue;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.choice {
+	font-family: "Alice Regular", cursive;
+	color: blueviolet;
+	background-color: antiquewhite;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.total {
+	font-family: "Alice Regular", cursive;
+	color: darkgreen;
+	background-color: darkseagreen;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.endtotal {
+	font-family: "Alice Regular", cursive;
+	color: darkgreen;
+	background-color: darkseagreen;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.gridtotal {
+	font-family: "Alice Regular", cursive;
+	color: darkgreen;
+	background-color: darkseagreen;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+td.highlight {
+	background-color: #FFA07A;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.diceGroup h4 {
+    display: inline;
+    font-size: 1em;
+}
+div#idhumandices h4 {
+    display: inline;
+    font-size: 1em;
+}
+div#idaidices h4 {
+    display: inline;
+    font-size: 1em;
+}
+h4#idhumanheader {
+    font-size: 1em;
+    color: blue;
+}
+h4#idaiheader {
+    font-size: 1em;
+    color: blue;
+}
+#diceform {
+  display: inline-block;
+}
+div#diceinputs {
+   margin-bottom: 0.25em;
+}
+h4#swalhumanover {
+   color: darkgreen;
+}
+h4#swalaiover {
+   color: darkgreen;
+}
+#dicebutton {
+   width: 10em;
+}
+#dicescore {
+   width: 10em;
+}
+#score {
+   width: 10em;
+}
+#dicebutton:enabled:active {
+   background-color: #3e8e41;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+}
+#dicescore:enabled:active {
+   background-color: #3e8e41;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+}
+#score:enabled:active {
+   background-color: #3e8e41;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+}
+input[type="checkbox"] {
+   -webkit-appearance: initial;
+   -moz-appearance: initial;
+   appearance: initial;
+   width: 20px;
+   height: 20px;
+   border: none;
+   background: gray;
+   position: relative;
+}
+input[type="checkbox"]:checked {
+   background: blue;
+}
+input[type="checkbox"]:checked:after {
+   content: "\2713";
+   color: #fff;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%,-50%);
+   -moz-transform: translate(-50%,-50%);
+   -ms-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+}
+label.checkbox1.highlight {
+  background-color: #FFA07A;
+}
+label.checkbox1 input[type="checkbox"] {display:none;}
+label.checkbox1 span {
+  display:inline-block;
+  border: none;
+  width:20px;
+  height:20px;
+  background: gray;
+  vertical-align:middle;
+  margin: 2px;
+  position: relative;
+  transition:width 0.1s, height 0.1s, margin 0.1s;
+}
+label.checkbox1 :checked + span {
+  background: blue;
+  width:20px;
+  height:20px;
+  margin: 2px;
+}
+label.checkbox1 :checked + span:after {
+  content: "\2713";
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+}
+label.checkbox2 input[type="checkbox"] {display:none;}
+label.checkbox2 span {
+  display:inline-block;
+  border:2px solid #BBB;
+  border-radius:10px;
+  width:20px;
+  height:20px;
+  background:#C33;
+  vertical-align:middle;
+  margin: 2px;
+  position: relative;
+  transition:width 0.1s, height 0.1s, margin 0.1s;
+}
+label.checkbox2 :checked + span {
+  background:#6F6;
+  width:20px;
+  height:20px;
+  margin: 2px;
+}
+label.checkbox2 :checked + span:after {
+  content: '\2714';
+  font-size: 20px;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  color: #99a1a7;
+}
+label.checkbox3 input[type="checkbox"] {display:none;}
+label.checkbox3 span {
+  display:inline-block;
+  border:2px solid #BBB;
+  border-radius:10px;
+  width:20px;
+  height:20px;
+  background:#ffffff;
+  vertical-align:middle;
+  margin: 2px;
+  position: relative;
+  transition:width 0.1s, height 0.1s, margin 0.1s;
+}
