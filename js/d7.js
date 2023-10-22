@@ -699,27 +699,6 @@ D7AnimBuilder.get = function(id) {
 	return D7AnimBuilder.animBuilders[id];
 }
 
-function D7Sample() {}
-
-D7Sample.showTotals = function(id) {
-	var animBuilder = D7AnimBuilder.animBuilders[id];
-	var results = animBuilder.results;
-	var layout = animBuilder.layout;
-	var numTotals = layout.length;
-	var dieCount = -1;
-	for (var i=0; i<numTotals; ++i) {
-		var numInRow = layout[i] * animBuilder.groupsize;
-		var rowTotal = 0;
-		for (var j=0; j<numInRow; ++j) {
-			rowTotal += results[++dieCount];
-		}
-		var dieSpan = document.getElementById("sidebar_" + i);
-		dieSpan.innerHTML = "&nbsp;= " + rowTotal;
-	}
-}
-
-D7Sample.noop = function() { return; }
-
 function D7() {}
 
 D7.baseUrl = "";
