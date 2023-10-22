@@ -699,18 +699,6 @@ D7AnimBuilder.get = function(id) {
 	return D7AnimBuilder.animBuilders[id];
 }
 
-D7AnimBuilder.prototype.reset = function() {
-	var i;
-	for (i=0; i<this.results.length; ++i) {
-		this.results[i] = 0;
-	}
-	for (i=0; i<this.layout.length; ++i) {
-		var dieSpan = document.getElementById("sidebar_" + i);
-		dieSpan.innerHTML = "";
-	}
-
-}
-
 function D7Sample() {}
 
 D7Sample.showTotals = function(id) {
@@ -733,11 +721,6 @@ D7Sample.showTotals = function(id) {
 D7Sample.noop = function() { return; }
 
 function D7() {}
-
-D7.roll = function() {
-	D7AnimBuilder.get("dice").reset();
-	D7AnimBuilder.get("dice").start();
-}
 
 D7.baseUrl = "";
 
