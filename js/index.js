@@ -100,7 +100,7 @@ YAHTZEE.findCombinations = function(results) {
 			++equals[Yahtzee.dices[i] - 1];
 		}
 	}
-	console.log(equals);
+//	console.log(equals);
 	return equals;
 }
 
@@ -212,9 +212,9 @@ YAHTZEE.sort_results_stub = function(results, player, score) {
 var stub = sinon.stub(YAHTZEE, "sort_results", YAHTZEE.sort_results_stub);
 
 callback = function() {
-	console.log("D7AnimGroupcallback results human: " + yahtzee.results[0] + " AI: " + yahtzee.results[1]);
+//	console.log("D7AnimGroupcallback results human: " + yahtzee.results[0] + " AI: " + yahtzee.results[1]);
 	if (($.urlParam('stubmode') != null) && $.urlParam('stubmode')) {
-		console.log("YAHTZEE sort_results_stub call count: " + stub.callCount);
+//		console.log("YAHTZEE sort_results_stub call count: " + stub.callCount);
 	}
 	else {
 		stub.restore();
@@ -605,8 +605,8 @@ callback = function() {
 		if (humanoptions === 0) YAHTZEE.scoreResults();
 	}
 	$("#turn").html(turn);
-	console.log("D7AnimGroupcallback sorted results0: " + dices0);
-	console.log("D7AnimGroupcallback sorted results1: " + dices1);
+//	console.log("D7AnimGroupcallback sorted results0: " + dices0);
+//	console.log("D7AnimGroupcallback sorted results1: " + dices1);
 }
 
 YAHTZEE.scoreResults = function() {
@@ -766,7 +766,7 @@ YAHTZEE.humanscoreResults = function() {
 	$("#scorelower2total").html(Yahtzee.scorelowergrid + Yahtzee.bonuslowergrid);
 	if (highlight > 12) {
 		Yahtzee.gameover = true;
-		console.log("Human Game over");
+//		console.log("Human Game over");
 		swal({
 			title: "<h4 id='swalhumanover'>Human Game over</h4>",
 			timer: 10000,
@@ -829,7 +829,7 @@ YAHTZEE.humanscoreResults = function() {
 		}
 		if (Yahtzee.disabled > 12) {
 			Yahtzee.gameover = true;
-			console.log("Human Game over");
+//			console.log("Human Game over");
 			swal({
 				title: "<h4 id='swalhumanover'>Human Game over</h4>",
 				timer: 10000,
@@ -948,7 +948,7 @@ YAHTZEE.aiscoreResults = function() {
 	}
 	else {
 		YahtzeeAI.gameover = true;
-		console.log("AI Game over");
+//		console.log("AI Game over");
 		swal({
 			title: "<h4 id='swalaiover'>AI Game over</h4>",
 			timer: 10000,
