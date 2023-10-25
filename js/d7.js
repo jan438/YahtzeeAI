@@ -237,7 +237,7 @@ function D7AnimGroup(id, animators, isSequenced) {  // The animators argument is
 	if ((typeof id != "string") || !id) return; // allows a dummy object to be created without causing errors below.
 	this.id = id;
 	if (this.id === "dice1") {
-//		console.log("D7 AnimGroup class: " + this.id);
+		console.log("===0 D7 AnimGroup class: " + this.id);
 		this.roll = 0;
 		this.bestSelection = null;
 		this.bestEValue = -1.0;
@@ -553,7 +553,7 @@ D7AnimGroup.prototype.start = function(results) {
 		this.categoryHasBeenChosen[11] = $("#chkAIyahtzee").parent().parent().hasClass("highlight").toString();
 		this.categoryHasBeenChosen[12] = $("#chkAIchance").parent().parent().hasClass("highlight").toString();		
 		var bestSelectionroll = this.getBestSelection();
-		console.log('AI results: ' + JSON.stringify(this.results) + ' BestSelection: ' + JSON.stringify(bestSelectionroll));
+		console.log('===1 AI results: ' + JSON.stringify(this.results) + ' BestSelection: ' + JSON.stringify(bestSelectionroll));
 		var bestEValueroll = this.bestEValue;
 		var values = this.allSelections.toArray();
 		for (i = 0; i < values.length; i++) {
