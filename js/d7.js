@@ -351,7 +351,7 @@ D7AnimGroup.prototype.generateDiceCombinations = function(selections, dice) {
 			}
 		}
 	}
-//	console.log("CountDiceCombinations: " + countDiceCombinations);
+	console.log("===2 CountDiceCombinations: " + countDiceCombinations);
 	return result;
 }
 
