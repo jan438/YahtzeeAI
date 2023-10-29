@@ -352,7 +352,7 @@ D7AnimGroup.prototype.generateDiceCombinations = function(selections, dice) {
 			}
 		}
 	}
-	console.log("===2 D7AnimGroup.prototype.generateDiceCombinations");
+	console.log("===2 D7AnimGroup.prototype.generateDiceCombinations ===start");
 	console.log("* CountDiceCombinations: " + countDiceCombinations);
 	return result;
 }
