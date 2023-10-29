@@ -555,7 +555,7 @@ D7AnimGroup.prototype.start = function(results) {
 		this.categoryHasBeenChosen[11] = $("#chkAIyahtzee").parent().parent().hasClass("highlight").toString();
 		this.categoryHasBeenChosen[12] = $("#chkAIchance").parent().parent().hasClass("highlight").toString();		
 		var bestSelectionroll = this.getBestSelection();
-		console.log("===1 D7AnimGroup.prototype.start");
+		console.log("===1 D7AnimGroup.prototype.start ===roll");
 		console.log("* AI results: " + JSON.stringify(this.results) + " BestSelection: " + JSON.stringify(bestSelectionroll));
 		var bestEValueroll = this.bestEValue;
 		var values = this.allSelections.toArray();
