@@ -237,7 +237,7 @@ function D7AnimGroup(id, animators, isSequenced) {  // The animators argument is
 	if ((typeof id != "string") || !id) return; // allows a dummy object to be created without causing errors below.
 	this.id = id;
 	if (this.id === "dice1") {
-		console.log("===0 D7 AnimGroup class: ");
+		console.log("===0 D7 AnimGroup class ===index.js");
 		console.log("* " + this.id);
 		this.roll = 0;
 		this.bestSelection = null;
