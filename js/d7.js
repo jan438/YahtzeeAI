@@ -374,6 +374,8 @@ D7AnimGroup.prototype.chooseBestCategory = function(combination) {
 			}
 		}
 	}
+	console.log("===4 D7AnimGroup.prototype.chooseBestCategory ===D7AnimGroup.prototype.start");
+	console.log("* CategoryIndex: " + categoryIndex);
 	return categoryIndex;
 }
 
