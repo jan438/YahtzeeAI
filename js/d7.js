@@ -484,6 +484,8 @@ D7AnimGroup.prototype.isSmallStraight = function(dice) {
 	for (i = 0; i < 5; i++) {
 		mask = mask | (1 << (dice[i] - 1));
 	}
+	console.log("===5 D7AnimGroup.prototype.isSmallStraight ===D7AnimGroup.prototype.isDiceValidForCategory");
+	console.log("* Mask: " + mask);	
 	if ((mask & SSM1) == SSM1) {
 		return true;
 	} else if ((mask & SSM2) == SSM2) {
